@@ -23,6 +23,8 @@ int main()
     printf("Resultado: %d\n", result);
     
     system ("pause");
+ 
+    return 0;
 }
 
 
