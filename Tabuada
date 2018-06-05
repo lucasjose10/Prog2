@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+void lerarq(){
+
+    int i=0;
+    int j=0;
+
+    FILE *arq;
+
+        arq=fopen("tabuada.txt","w");
+
+    if(arq==NULL){
+
+       printf("\NERRO ao abrir arquivo");
+       exit(-1);
+
+        }
+
+    else
+    {
+        for(i=0;i<10;i++){
+
+                for(j=0;j<10;j++){
+                    fprintf(arq,"%d+%d=%d\n",i,j,i+j);
+                }
+        fprintf(arq,"\n------------\n");
+    }
+    fclose(arq);
+    }
+
+
+}
+
+
+
+
+int main(){
+
+
+
+    lerarq();
+
+    return 0;
+}
+
+
+
+
