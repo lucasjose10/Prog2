@@ -47,6 +47,9 @@ int main()
 		fprintf(arq3,"%s\n", linha2);
 	}
 	
+	fclose(arq1);
+	fclose(arq2);
+	fclose(arq3);
 	
 	
 	return 0;
